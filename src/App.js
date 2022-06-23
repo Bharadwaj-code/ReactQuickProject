@@ -3,19 +3,17 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <Header />
     </div>
   );
 }
 function Header() {
   return (
-    <div className="Data">
+    <div className="header">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+        <Intro />
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -29,4 +27,13 @@ function Header() {
   );
 }
 
+function Intro() {
+  return (
+    <div className="intro">
+      <p>
+        Edit <code>src/App.js</code> and save to reload.
+      </p>
+    </div>
+  );
+}
 export default App;
